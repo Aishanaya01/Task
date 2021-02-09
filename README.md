@@ -19,15 +19,15 @@ The git clone command is used to copy an existing Git repository from a server t
 
 ***4.How to create branches***<br>
 Branching<br>
-```git branch <name> : create a new branch while staying on the current branch
-* git checkout <name> : switch to an existing branch
+* git branch <name> : create a new branch while staying on the current branch
+ * git checkout <name> : switch to an existing branch
 * git checkout -b <name> : create a new branch and switch to it
 * git branch <name> [<start-point>] : can be another branch name, commit SHA, HEAD or a tag name Example:
 * git checkout-b<name> some_other_branch
 * git checkout-b<name> 
 * git checkout-b<name> you will lose uncommitted work
 * git checkout-b<name> v1.0.5
-* git checkout - : quick switch to previous branch```
+* git checkout - : quick switch to previous branch
 Delete a remote branch
 * git push origin :<branchName> : delete a branch on the origin remote repository
 * git push origin -d <branchName>
