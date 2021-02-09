@@ -14,28 +14,28 @@ Cloning is a process of creating an identical copy of a Git Remote Repository to
 Cloning Repositories
 The git clone command is used to copy an existing Git repository from a server to the local machine
 
-git clone https://github.com/Aishanaya01/Task.git clones the repo in your current directory.
-git clone https://github.com/Aishanaya01/Task.git MyFolder : clones the repo into MyFolder in your current directory.
+*git clone https://github.com/Aishanaya01/Task.git clones the repo in your current directory.
+*git clone https://github.com/Aishanaya01/Task.git MyFolder : clones the repo into MyFolder in your current directory.
 
 ***4.How to create branches***<br>
 Branching<br>
 ```git branch <name> : create a new branch while staying on the current branch
-git checkout <name> : switch to an existing branch
-git checkout -b <name> : create a new branch and switch to it
-git branch <name> [<start-point>] : can be another branch name, commit SHA, HEAD or a tag name Example:
-git checkout-b<name> some_other_branch
-git checkout-b<name> 
-git checkout-b<name> you will lose uncommitted work
-git checkout-b<name> v1.0.5
-git checkout - : quick switch to previous branch```
+*git checkout <name> : switch to an existing branch
+*git checkout -b <name> : create a new branch and switch to it
+*git branch <name> [<start-point>] : can be another branch name, commit SHA, HEAD or a tag name Example:
+*git checkout-b<name> some_other_branch
+*git checkout-b<name> 
+*git checkout-b<name> you will lose uncommitted work
+*git checkout-b<name> v1.0.5
+*git checkout - : quick switch to previous branch```
 Delete a remote branch
-git push origin :<branchName> : delete a branch on the origin remote repository
-git push origin -d <branchName>
+*git push origin :<branchName> : delete a branch on the origin remote repository
+*git push origin -d <branchName>
 Delete a local branch
-git branch -d <branchName> : not delete if it has unmerged changes
-git branch -D <branchName> : deletes even if it has unmerged changes
+*git branch -d <branchName> : not delete if it has unmerged changes
+*git branch -D <branchName> : deletes even if it has unmerged changes
 
-***5.How to commit***<br>
+***5. how to commit***<br>
 The "commit" command is used to save your changes to the local repository.
 Git does not add changes to a commit automatically. You need to indicate which file and changes need to be saved before running the Git commit command.
 The commit command does not save changes in remote servers, only in the local repository of Git.
@@ -43,7 +43,7 @@ syntax:
 ```git commit -m '<topic> -m '<description>' : commit files staged with a message```
 
 ***6.How to change commit messages***<br>
-```git commit --amend -m "New message" : specify the commit message```
+```*git commit --amend -m "New message" : specify the commit message```
 git amend
 
 Note: Be aware that amending the most recent commit replaces it entirely and the previous commit is removedfrom the branch's history. This should be kept in mind when working with public repositories and on branches withother collaborators.
@@ -51,9 +51,9 @@ Note: Be aware that amending the most recent commit replaces it entirely and the
 This means that if the earlier commit had already been pushed, after amending it you will have to git push --force.<br>
 
 Commit message<br>
-git commit -m "Commit summary" -m "More detailed description follows here" : can pass in multiple -m arguments<br>
+*git commit -m "Commit summary" -m "More detailed description follows here" : can pass in multiple -m arguments<br>
 Creating an empty commit<br>
-git commit -m "This is a blank commit" --allow-empty : able to easily create commits without having to edit/touch a dummy file.<br>
+*git commit -m "This is a blank commit" --allow-empty : able to easily create commits without having to edit/touch a dummy file.<br>
 The --allow-empty commit will bypass the check.<br>
 
 Committing on behalf of someone else<br>
@@ -65,13 +65,13 @@ The git stash command enables you to switch branches without committing the curr
 Generally, the stash's meaning is "store something safely in a hidden place." <br>
 The sense in Git is also the same for stash; Git temporarily saves your data safely without committing.<br>
 syntax:<br>
-```git stash : stashes all tracked files.<br>
+```*git stash : stashes all tracked files.<br>
 
-git stash --include-untracked/-u : include all untracked files<br>
+*git stash --include-untracked/-u : include all untracked files<br>
 
-git stash save "message" : message with your stash to make it identifiable<br>
+*git stash save "message" : message with your stash to make it identifiable<br>
 
-git stash -keep-index/-k : leave the staging area in current state after stash<br>```
+*git stash -keep-index/-k : leave the staging area in current state after stash<br>```
 
 List saved stashes<br>
 git stash list : all stashes in the stack in reverse chronological order<br>
@@ -97,9 +97,9 @@ syntax:<br>
 
  ***10.How to merge***<br>
 
- ```git merge <another_branch> : make sure you are in the branch that is getting merged into.<br>
-git merge --abort : after starting a merge, you might want to stop the merge and return everything to its pre-merge state<br>
-git merge <branch_name> --no-ff -m"<commit message>" : merge with a commit as default behaviour in fast-forward only updates the branch pointer without creating a merge commit.```<br>
+ ```git merge <another_branch> : make sure you are in the branch that is getting merged into.```<br>
+```git merge --abort : after starting a merge, you might want to stop the merge and return everything to its pre-merge state<br>```
+```git merge <branch_name> --no-ff -m"<commit message>" : merge with a commit as default behaviour in fast-forward only updates the branch pointer without creating a merge commit.```<br>
 
 ***11.How to resolve conflict***<br>
 
