@@ -85,10 +85,10 @@ To retrieve changes out of the stash and apply them to the current branch you’
 
 git stash apply STASH-NAME applies the changes and leaves a copy in the stash<br>
 syntax:<br>
-```git stash apply : apply last stash without removing it<br>```
+* git stash apply : apply last stash without removing it<br>
 git stash pop STASH-NAME applies the changes and removes the files from the stash<br>
 syntax:<br>
-```git stash pop : apply last stash and remove it from the stack<br>```
+* git stash pop : apply last stash and remove it from the stack<br>
 ***9. What is origin***<br>
 "origin" is the name of the remote repository where you want to publish you commits. By convention, the default remote repository is called "origin",<br>
  but you can work with several remotes (with different names) as the same time.<br>
