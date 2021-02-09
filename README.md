@@ -1,5 +1,5 @@
 ***1. What is the use of github*** <br><br>
->GitHub is a website for developers and programmers to collaboratively work on code.<br>
+GitHub is a website for developers and programmers to collaboratively work on code.<br>
 The primary benefit of GitHub is its version control system, which allows for seamless collaboration without compromising the integrity of the original project.<br>
 The projects on GitHub are examples of open-source software.<br>
 
@@ -35,7 +35,7 @@ Delete a local branch
 git branch -d <branchName> : not delete if it has unmerged changes
 git branch -D <branchName> : deletes even if it has unmerged changes
 
-***5.How to commit***<br><br>
+***5.How to commit***<br>
 The "commit" command is used to save your changes to the local repository.
 Git does not add changes to a commit automatically. You need to indicate which file and changes need to be saved before running the Git commit command.
 The commit command does not save changes in remote servers, only in the local repository of Git.
@@ -59,7 +59,7 @@ The --allow-empty commit will bypass the check.<br>
 Committing on behalf of someone else<br>
 git commit-m "msg" --author "John Smith <johnsmith@example.com>" : can give them credit with the --author option.
 
-***7.What is git stash<br>*** 
+***7.What is git stash***<br>
 Sometimes you want to switch the branches, but you are working on an incomplete part of your current project. You don't want to make a commit of half-done work. Git stashing allows you to do so. 
 The git stash command enables you to switch branches without committing the current branch<br>
 Generally, the stash's meaning is "store something safely in a hidden place." <br>
